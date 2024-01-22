@@ -12,3 +12,5 @@ Welcome to my Personel GoLang learning repository! 🚀 Here, you'll find variou
 
 - [Arrays & Slices in Golang](https://ceylanomer.medium.com/arrays-and-slices-in-golang-3d535eff300d)
 
+- [nil vs null](https://go101.org/article/nil.html)
+
