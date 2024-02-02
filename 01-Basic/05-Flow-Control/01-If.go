@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+func getLength(l int) int {
+	return l
+}
+
 func main() {
 
 	if 7%2 == 0 {
@@ -24,6 +28,22 @@ func main() {
 		fmt.Println(num, "has 1 digit")
 	} else {
 		fmt.Println(num, "has multiple digits")
+	}
+
+	fmt.Println("----")
+
+	length := getLength(10)
+
+	if length > 0 {
+		fmt.Printf("Valid Length \n")
+	}
+
+	// Compact If
+
+	if length := getLength(10); length <= 0 {
+		fmt.Printf("Invalid or Zero Length\n")
+	} else {
+		fmt.Printf("Valid Length")
 	}
 }
 

@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"os"
 )
 
 const s string = "constant"
@@ -51,4 +52,17 @@ func main() {
 	fmt.Println(int64(m))
 
 	fmt.Println(math.Sin(n))
+
+	fmt.Println()
+
+	const firstNum = 10
+
+	const secondNum = 20
+
+	const total = secondNum + firstNum
+
+	fmt.Printf("Total %d \n", total)
+
+	fmt.Fprintf(os.Stdout, "Total %d", total)
+
 }
