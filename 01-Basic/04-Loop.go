@@ -2,12 +2,12 @@ package main
 
 import "fmt"
 
-func main() {
+func loop() {
 
 	// Simple loop using a for loop with a condition
 	i := 1
 	for i <= 3 {
-		fmt.Println(i)
+		fmt.Print(i,",")
 		i = i + 1
 	}
 
@@ -36,5 +36,10 @@ func main() {
 	strings := []string{"hello", "world"}
 	for i, s := range strings {
 		fmt.Println(i, s)
+	}
+
+	// with blank identifiers
+	for _,ch := range "hello" {
+		fmt.Printf("%c,",ch)
 	}
 }

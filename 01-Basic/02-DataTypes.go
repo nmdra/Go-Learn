@@ -5,7 +5,7 @@ import (
 	"reflect"
 )
 
-func main() {
+func dataTypes() {
 	// Integer types
 	var intVar int = 42
 

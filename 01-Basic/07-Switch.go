@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func switchGo2() {
 	day := "monday"
 
 	switch day {

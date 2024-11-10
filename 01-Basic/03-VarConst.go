@@ -8,7 +8,7 @@ import (
 
 const s string = "constant"
 
-func main() {
+func varConst() {
 
 	fmt.Println("go" + "lang")
 

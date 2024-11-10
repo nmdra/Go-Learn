@@ -6,7 +6,7 @@ func getLength(l int) int {
 	return l
 }
 
-func main() {
+func ifGo() {
 
 	if 7%2 == 0 {
 		fmt.Println("7 is even")
