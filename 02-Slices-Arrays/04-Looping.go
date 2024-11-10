@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func arrayLooping() {
 	s := []int{100, 101, 102}
 
 	for v := range s {

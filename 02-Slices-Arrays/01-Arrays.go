@@ -1,3 +1,5 @@
+
+
 package main
 
 import (
@@ -5,16 +7,31 @@ import (
 	"sort"
 )
 
-func main() {
+func arraysGo() {
 
 	// Declaring an array and initializing it with values
 	var numbers = [...]int{1, 2, 3, 4, 5} // Size calculated automatically
 
 	fmt.Println("numbers:", numbers)
 
+	var array []int
+	fmt.Println("array:", array)
+
 	// Sorting Array
 	arr := []int{5, 3, 1, 4, 2}
 	sort.Ints(arr)
+
+	for i := range arr {
+		println(i, &arr[i])
+	}
+
+	// byte array
+	bytearr := [5]byte{0, 1, 2, 3, 4}
+	println("bytearr", &bytearr)
+
+	for i := range bytearr {
+		println(i, &bytearr[i])
+	}
 
 	target := 3
 	found := false
