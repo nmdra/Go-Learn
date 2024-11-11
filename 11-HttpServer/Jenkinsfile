@@ -43,13 +43,31 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('Test Hello') {
             steps {
                 script {
                     // Wait briefly to ensure the server has started
                     sleep 5
                     // Use curl to test the endpoint
                     def status = sh(script: 'curl -v http://localhost:8089/hello', returnStatus: true)
+                    
+                    // Exit if the test fails or succeeds
+                    if (status == 0) {
+                        echo "Test passed."
+                    } else {
+                        error("Test failed.")
+                    }
+                }
+            }
+        }
+
+        stage('Test Header') {
+            steps {
+                script {
+                    // Wait briefly to ensure the server has started
+                    sleep 5
+                    // Use curl to test the endpoint
+                    def status = sh(script: 'curl -v http://localhost:8089/headers', returnStatus: true)
                     
                     // Exit if the test fails or succeeds
                     if (status == 0) {
