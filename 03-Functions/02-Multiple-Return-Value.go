@@ -12,6 +12,11 @@ func main() {
 	fmt.Println(a)
 	fmt.Println(b)
 
-	_, c := vals()
+	var c int
+
+	_, c = vals()
+	fmt.Println(c)
+
+	c,_  = vals()
 	fmt.Println(c)
 }
