@@ -25,8 +25,18 @@ func main() {
 
 	fmt.Printf("map: %v, len: %d\n", m, len(m))
 
-	clear(m)
-	fmt.Printf("map: %v, len: %d\n", m, len(m))
+	// clear(m)
+	// fmt.Printf("map: %v, len: %d\n", m, len(m))
+
+	// Map Lookup
+	// @see :- https://stackoverflow.com/questions/2050391/how-to-check-if-a-map-contains-a-key-in-go
+
+	// To test for presence in the map without worrying about the actual value,
+	// you can use the blank identifier (_) in place of the usual variable for the value.
+
+	if _, ok := m["k2"]; ok {
+ 	   fmt.Println("Ok")
+	}
 
 	_, prs := m["k2"]
     fmt.Println("prs:", prs)
