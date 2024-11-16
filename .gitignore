@@ -23,6 +23,8 @@ go.work
 # Remove Personel scripts
 tree.sh
 
+*.code-workspace
+
 #
 Go-Class
 
