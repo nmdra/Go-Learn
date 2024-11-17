@@ -7,7 +7,7 @@ func loop() {
 	// Simple loop using a for loop with a condition
 	i := 1
 	for i <= 3 {
-		fmt.Print(i,",")
+		fmt.Print(i, ",")
 		i = i + 1
 	}
 
@@ -39,7 +39,7 @@ func loop() {
 	}
 
 	// with blank identifiers
-	for _,ch := range "hello" {
-		fmt.Printf("%c,",ch)
+	for _, ch := range "hello" {
+		fmt.Printf("%c,", ch)
 	}
 }

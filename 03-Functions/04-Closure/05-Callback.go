@@ -8,12 +8,12 @@ import (
 type Callback func(string)
 
 func process(data string, cb Callback) {
-    fmt.Println("Processing:", data)
-    cb(data)  // Calling the callback after processing
+	fmt.Println("Processing:", data)
+	cb(data) // Calling the callback after processing
 	fmt.Println("Processed:", data)
 }
 
-// Alternative way  
+// Alternative way
 
 // func process(data string, cb func(string)) {
 //     fmt.Println("Processing:", data)
@@ -22,17 +22,15 @@ func process(data string, cb Callback) {
 // }
 
 func printUpperCase(data string) {
-    fmt.Println("Uppercase:", strings.ToUpper(data))
+	fmt.Println("Uppercase:", strings.ToUpper(data))
 }
 
 func printLowerCase(data string) {
-    fmt.Println("Lowercase:", strings.ToLower(data))
+	fmt.Println("Lowercase:", strings.ToLower(data))
 }
 
-
-
 func main() {
-    process("hello", printUpperCase)  // Output: Processing: hello
+	process("hello", printUpperCase) // Output: Processing: hello
 
 	process("Hello", printLowerCase)
 

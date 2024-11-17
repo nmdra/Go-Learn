@@ -58,18 +58,17 @@ func slicesGo() {
 
 	// Create a slice with initial length 5 and capacity 10
 	numbers := make([]int, 5, 10)
-    fmt.Println("numbers:", numbers, "len:", len(numbers), "cap:", cap(numbers))
+	fmt.Println("numbers:", numbers, "len:", len(numbers), "cap:", cap(numbers))
 
 	// Append elements to the slice
 	numbers = append(numbers, 1, 2, 3, 4, 5)
-    fmt.Println("numbers:", numbers, "len:", len(numbers), "cap:", cap(numbers))
-
-	numbers = append(numbers, 1)
-    fmt.Println("numbers:", numbers, "len:", len(numbers), "cap:", cap(numbers))
-
-	numbers = append(numbers, 6,7,8, 9, 10, 11)
 	fmt.Println("numbers:", numbers, "len:", len(numbers), "cap:", cap(numbers))
 
+	numbers = append(numbers, 1)
+	fmt.Println("numbers:", numbers, "len:", len(numbers), "cap:", cap(numbers))
+
+	numbers = append(numbers, 6, 7, 8, 9, 10, 11)
+	fmt.Println("numbers:", numbers, "len:", len(numbers), "cap:", cap(numbers))
 
 }
 

@@ -17,6 +17,6 @@ func main() {
 	_, c = vals()
 	fmt.Println(c)
 
-	c,_  = vals()
+	c, _ = vals()
 	fmt.Println(c)
 }

@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"reflect"	
+	"reflect"
 )
 
 // Normal Function

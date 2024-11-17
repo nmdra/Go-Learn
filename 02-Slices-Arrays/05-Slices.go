@@ -10,7 +10,7 @@ func sliceAndArray() {
 
 	slice[0] = 100
 
-    fmt.Println(array) // Output: [0 100 2 3 4 5]
+	fmt.Println(array) // Output: [0 100 2 3 4 5]
 
 	fmt.Println(&array[1], ",", &slice[0]) // same
 
@@ -19,5 +19,5 @@ func sliceAndArray() {
 	slice = append(slice, 6, 7, 8)
 
 	fmt.Println(slice, len(slice), cap(slice)) // Output: [1 2 6 7] 4 8
-	fmt.Println(array) // Output: [0 100 2 6 7 5]
+	fmt.Println(array)                         // Output: [0 100 2 6 7 5]
 }

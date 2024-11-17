@@ -1,7 +1,7 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 	"maps"
 )
 
@@ -16,10 +16,10 @@ func main() {
 	fmt.Printf("map: %v, len: %d\n", m, len(m))
 
 	v3 := m["k3"]
-    fmt.Println("v3:", v3)
+	fmt.Println("v3:", v3)
 
 	v2, k2 := m["k2"]
-    fmt.Println("v2:", v2, "k2:", k2)
+	fmt.Println("v2:", v2, "k2:", k2)
 
 	delete(m, "k1")
 
@@ -35,27 +35,25 @@ func main() {
 	// you can use the blank identifier (_) in place of the usual variable for the value.
 
 	if _, ok := m["k2"]; ok {
- 	   fmt.Println("Ok")
+		fmt.Println("Ok")
 	}
 
 	_, prs := m["k2"]
-    fmt.Println("prs:", prs)
+	fmt.Println("prs:", prs)
 
 	// ----------------------------------------------------------------
 
-	// Map literals 
+	// Map literals
 	n := map[string]int{"foo": 1, "bar": 2}
-    fmt.Println("map:", n)
+	fmt.Println("map:", n)
 
 	n2 := map[string]int{"foo": 1, "bar": 2}
-    if maps.Equal(n, n2) {
-        fmt.Println("n == n2")
-    }
+	if maps.Equal(n, n2) {
+		fmt.Println("n == n2")
+	}
 
 	n3 := maps.Clone(n2)
 	n3["foo"] = 5
-    fmt.Println(maps.Equal(n2, n3))
-
-
+	fmt.Println(maps.Equal(n2, n3))
 
 }

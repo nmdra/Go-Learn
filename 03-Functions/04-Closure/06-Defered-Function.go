@@ -3,6 +3,6 @@ package main
 import "fmt"
 
 func main() {
-    defer fmt.Println("This will be printed last")
-    fmt.Println("This will be printed first")
+	defer fmt.Println("This will be printed last")
+	fmt.Println("This will be printed first")
 }

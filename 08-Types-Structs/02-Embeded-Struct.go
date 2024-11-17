@@ -10,7 +10,7 @@ type Address struct {
 type Person struct {
 	Name    string
 	Age     int
-	Address           // Embedded struct (no explicit field name)
+	Address // Embedded struct (no explicit field name)
 }
 
 func main() {
@@ -24,6 +24,6 @@ func main() {
 	}
 
 	fmt.Println("Name:", p.Name)
-	fmt.Println("City:", p.City)      // Accessing embedded field directly
+	fmt.Println("City:", p.City) // Accessing embedded field directly
 	fmt.Println("Country:", p.Country)
 }
