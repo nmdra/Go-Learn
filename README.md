@@ -27,16 +27,6 @@ Personel GoLang learning repository! 🚀 Here, you'll find various resources an
 - [Learn-Go](https://www.karanpratapsingh.com/courses/go)
 ---
 
-## TODO
-
-- [ ] [Build Web Application with Golang](https://astaxie.gitbooks.io/build-web-application-with-golang/content/en/)
-
-- [ ] [Backend MasterClass](https://www.youtube.com/playlist?list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
-
-- [ ] [Build a Backend Web Server + RSS Aggregator(Boot.dev)](https://youtu.be/dpXhDzgUSe4?si=KGbb9eTWowuPGUoB)
-
----
-
 <div align="center">
   <a href="https://nmdra.github.io"> 🌎 nmdra.github.io</a> |
   <a href="https://github.com/nmdra"> 👨‍💻 Github</a> |
