@@ -2,22 +2,22 @@ package main
 
 import "fmt"
 
-func intSeq() func() int {
-	i := 0
-	return func() int {
-		i++
-		return i
-	}
+// A function that returns a closure
+func createCounter() func() int {
+    count := 0
+    return func() int {
+        count++
+        return count
+    }
 }
 
 func main() {
+    counter1 := createCounter()
+    counter2 := createCounter()
 
-	nextInt := intSeq()
+    fmt.Println(counter1()) // Outputs: 1
+    fmt.Println(counter1()) // Outputs: 2
 
-	fmt.Println(nextInt())
-	fmt.Println(nextInt())
-	fmt.Println(nextInt())
-
-	newInts := intSeq()
-	fmt.Println(newInts())
+    fmt.Println(counter2()) // Outputs: 1
+    fmt.Println(counter2()) // Outputs: 2
 }
